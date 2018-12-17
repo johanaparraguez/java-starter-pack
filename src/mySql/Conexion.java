@@ -40,10 +40,9 @@ public class Conexion {
        public Connection conexion()
         {
           try {
-
                //Cargamos el Driver MySQL
-               Class.forName("org.gjt.mm.mysql.Driver");
-               conect = DriverManager.getConnection("jdbc:mysql://localhost/veterinaria","root","abcdef");
+                Class.forName("com.mysql.cj.jdbc.Driver");
+               conect = DriverManager.getConnection("jdbc:mysql://localhost/veterinaria","cc","qwerty");
             } catch (Exception e) {
                 System.out.println("No se puede conectar "+e);
             }
