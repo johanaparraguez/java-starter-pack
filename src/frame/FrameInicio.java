@@ -103,9 +103,9 @@ public class FrameInicio extends javax.swing.JFrame {
     private void btnConexionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConexionActionPerformed
             // TODO add your handling code here:
         Conexion con = new Conexion();
-        con.conexionMsg();
+        con.conexion();
         
-        if (con!=null) {
+        if (con != null) {
             JOptionPane.showMessageDialog(null, "Conexion Existosa");
         }
     }//GEN-LAST:event_btnConexionActionPerformed
